@@ -1,0 +1,62 @@
+title: 'Presentium: Simplifying attendance monitoring'
+description: It provides a modern attendance monitoring system using RFID cards for an efficient, secure, and streamlined process.
+hero:
+  title: Attendance monitoring<br>made easy
+  description: |-
+    Manage student attendance with ease and efficiency.<br>
+
+    Presentium is a modern attendance management system<br>
+    using RFID cards for a secure and streamlined process.
+  headline:
+    label: Work in progress
+    to: https://github.com/presentium
+    target: _blank
+    variant: outline
+    icon: i-solar-code-2-bold-duotone
+    size: sm
+    trailing: true
+    color: primary
+    class: 'font-semibold hover:bg-primary-100 dark:hover:bg-primary-900 rounded-full'
+features:
+  headline: Features
+  title: Why use Presentium?
+  description: |-
+    Presentium is designed to make attendance monitoring easy and efficient.<br>
+    Here are some of the key features that make it stand out.
+  items:
+    - title: Easy to use
+      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      icon: i-heroicons-cog
+    - title: Reliable
+      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      icon: i-heroicons-check
+    - title: Secure
+      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      icon: i-heroicons-lock-closed
+    - title: Fast
+      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      icon: i-heroicons-rocket-launch
+    - title: Affordable
+      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      icon: i-heroicons-currency-dollar
+    - title: Scalable
+      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      icon: i-heroicons-chart-bar
+cta:
+  title: Get started today
+  description: Sign up now and start using Presentium to simplify your attendance monitoring process.
+  links:
+    - label: Open the Dashboard
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      size: xl
+      to: https://app.presentium.ch/
+faq:
+  title: Frequently asked questions
+  description: If you can't find the answer you're looking for, feel free to contact us.
+  items:
+    - label: Is this a secure service?
+      content: Yes, we take security very seriously. We use the latest security protocols to ensure your data is safe.
+      defaultOpen: true
+    - label: Can I cheat the system?
+      content: No.
