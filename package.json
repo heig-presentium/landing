@@ -27,18 +27,19 @@
     "@antfu/eslint-config": "^2.23.2",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-angular": "^19.3.0",
-    "@commitlint/prompt": "^19.3.1",
+    "@commitlint/cz-commitlint": "^19.2.0",
     "@nuxt/eslint": "^0.3.13",
     "commitizen": "^4.3.0",
     "eslint": "^9.7.0",
     "eslint-plugin-format": "^0.1.2",
     "husky": "^9.1.1",
+    "inquirer": "^9.3.6",
     "lint-staged": "^15.2.7",
     "vue-tsc": "^2.0.26"
   },
   "config": {
     "commitizen": {
-      "path": "@commitlint/prompt"
+      "path": "@commitlint/cz-commitlint"
     }
   }
 }
