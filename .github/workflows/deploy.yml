@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+      NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_LICENSE_KEY }}
 
     steps:
       - name: Checkout
