@@ -1,3 +1,3 @@
 export default {
-  '**/*': `npx --no eslint`,
+  '**/*': `npm run lint:fix`,
 }

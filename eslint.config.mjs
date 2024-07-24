@@ -6,6 +6,7 @@ export default withNuxt(
   antfu({
     type: 'app',
     vue: true,
+    typescript: true,
     stylistic: {
       indent: 2,
       quotes: 'single',
@@ -14,9 +15,6 @@ export default withNuxt(
       css: true,
       html: true,
       markdown: true,
-    },
-    typescript: {
-      tsconfigPath: './tsconfig.json',
     },
   }),
 )
