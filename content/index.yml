@@ -8,7 +8,7 @@ hero:
     Presentium is a modern attendance management system<br>
     using RFID cards for a secure and streamlined process.
   headline:
-    label: Work in progress
+    label: Under development
     to: https://github.com/presentium
     target: _blank
     variant: outline
@@ -25,22 +25,22 @@ features:
     Here are some of the key features that make it stand out.
   items:
     - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      description: Manage your attendance with ease and efficiency, thanks to our user-friendly dashboard and intuitive interface.
       icon: i-heroicons-cog
     - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      description: Our system is designed to be reliable and accurate, ensuring that you can trust the data it provides.
       icon: i-heroicons-check
     - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      description: We take security seriously, using the latest encryption protocols to ensure your data is safe and secure, with military-grade encryption.
       icon: i-heroicons-lock-closed
     - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      description: Our system is designed to be fast and responsive, ensuring that students can check in quickly and easily.
       icon: i-heroicons-rocket-launch
     - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      description: Our system only requires a minimalistic Raspberry Pi setup for reading RFID cards.
       icon: i-heroicons-currency-dollar
     - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+      description: Our system is elastically scalable to accommodate any number of students and classes, making it perfect for schools of all sizes.
       icon: i-heroicons-chart-bar
 cta:
   title: Get started today
@@ -58,5 +58,16 @@ faq:
     - label: Is this a secure service?
       content: Yes, we take security very seriously. We use the latest security protocols to ensure your data is safe.
       defaultOpen: true
+    - label: Is it easy to use?
+      content: Yes, our system is designed to be user-friendly and intuitive, making it easy to manage your attendance.
+    - label: How is my data stored?
+      content: Your data is stored securely on our servers, using military-grade encryption to keep it safe.
+    - label: How much does it cost?
+      content: Our system is affordable and cost-effective, with a minimalistic Raspberry Pi setup required for reading RFID cards.
+    - label: Can I use it for my school?
+      content: Yes, our system is designed to be scalable and can accommodate any number of students and classes, making it perfect for schools of all sizes.
+    - label: Where can I see the source code?
+      content: |-
+        You can find the source code for Presentium on our [GitHub Organisation](https://github.com/presentium){target="_blank"}.
     - label: Can I cheat the system?
       content: No.
