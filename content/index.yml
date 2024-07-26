@@ -25,7 +25,7 @@ features:
     Here are some of the key features that make it stand out.
   items:
     - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      description: Manage your attendance with ease and efficiency, thanks to our user-friendly dashboard and intuitive interface.
       icon: i-heroicons-cog
     - title: Reliable
       description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
@@ -37,7 +37,7 @@ features:
       description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
       icon: i-heroicons-rocket-launch
     - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+      description: Our system only requires a minimalistic Raspberry Pi setup for reading RFID cards.
       icon: i-heroicons-currency-dollar
     - title: Scalable
       description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
