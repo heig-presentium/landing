@@ -51,21 +51,21 @@ useSeoMeta({
           class="sm:max-w-xl"
         >
           <div class="p-3">
-            <p>The trailer video will be available here.</p>
-            <!--            <iframe -->
-            <!--              width="100%" -->
-            <!--              height="315" -->
-            <!--              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" -->
-            <!--              title="Presentium video trailer" -->
-            <!--              frameborder="0" -->
-            <!--              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
-            <!--              allowfullscreen -->
-            <!--            /> -->
+            <p>This video not unintentionally left absent.</p>
+            <!-- <iframe -->
+            <!--   width="100%" -->
+            <!--   height="315" -->
+            <!--   src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" -->
+            <!--   title="Presentium video trailer" -->
+            <!--   frameborder="0" -->
+            <!--   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
+            <!--   allowfullscreen -->
+            <!-- /> -->
           </div>
         </UModal>
       </template>
 
-      <ImagePlaceholder />
+      <!-- <ImagePlaceholder /> -->
     </ULandingHero>
 
     <ULandingSection
@@ -113,7 +113,11 @@ useSeoMeta({
           },
         }"
         class="max-w-4xl mx-auto"
-      />
+      >
+        <template #item="{ item }">
+          <MDC :value="item.content" class="prose prose-primary dark:prose-invert max-w-none text-gray-500 dark:text-gray-400" />
+        </template>
+      </ULandingFAQ>
     </ULandingSection>
   </div>
 </template>
