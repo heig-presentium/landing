@@ -8,11 +8,11 @@ hero:
     Presentium is a modern attendance management system<br>
     using RFID cards for a secure and streamlined process.
   headline:
-    label: Under development
+    label: v1.0 is out now!
     to: https://github.com/presentium
     target: _blank
     variant: outline
-    icon: i-solar-code-2-bold-duotone
+    icon: i-solar-rocket-2-line-duotone
     size: sm
     trailing: true
     color: primary

@@ -4,21 +4,30 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 
 const links = computed(() => [{
   label: 'Features',
-  to: '#features',
+  to: '/#features',
   icon: 'i-heroicons-cube-transparent',
-  active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing'),
+  active: nuxtApp.$router.currentRoute.value.path === '/' && activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing'),
 }, {
   label: 'FAQ',
-  to: '#faq',
+  to: '/#faq',
   icon: 'i-heroicons-question-mark-circle',
-  active: activeHeadings.value.includes('faq'),
+  active: nuxtApp.$router.currentRoute.value.path === '/' && activeHeadings.value.includes('faq'),
+}, {
+  label: 'Documentation',
+  to: '/docs',
+  icon: 'i-heroicons-book-open',
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#features'),
-    document.querySelector('#faq'),
-  ])
+  if (nuxtApp.$router.currentRoute.value.path === '/') {
+    updateHeadings([
+      document.querySelector('#features'),
+      document.querySelector('#faq'),
+    ])
+  }
+  else {
+    updateHeadings([])
+  }
 })
 </script>
 
@@ -35,6 +44,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         variant="ghost"
         trailing-icon="i-heroicons-arrow-right-20-solid"
         class="hidden lg:flex"
+        to="https://app.presentium.ch"
+        target="_blank"
       />
     </template>
 
@@ -48,6 +59,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         color="white"
         block
         class="mb-3"
+        to="https://app.presentium.ch"
+        target="_blank"
       />
     </template>
   </UHeader>

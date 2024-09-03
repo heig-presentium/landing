@@ -3,8 +3,7 @@ name: Continuous Integration > ESLint
 on:
   pull_request:
   push:
-    branches:
-      - dev
+    branches: [dev, main]
 
 permissions:
   contents: read

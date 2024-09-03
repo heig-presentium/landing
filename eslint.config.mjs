@@ -14,7 +14,7 @@ export default withNuxt(
     formatters: {
       css: true,
       html: true,
-      markdown: true,
+      markdown: false,
     },
   }),
 )

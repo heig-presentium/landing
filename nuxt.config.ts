@@ -22,13 +22,25 @@ export default defineNuxtConfig({
     '@nuxt/ui',
   ],
 
+  hooks: {
+    // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
+    'components:extend': (components) => {
+      const globals = components.filter(c => ['UButton'].includes(c.pascalName))
+      globals.forEach(c => c.global = true)
+    },
+  },
+
   ui: {
     icons: ['heroicons', 'simple-icons', 'solar'],
   },
 
+  colorMode: {
+    preference: 'light',
+  },
+
   routeRules: {
-    // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
-    '/': { prerender: true },
+    '/api/search.json': { prerender: true },
+    '/docs': { redirect: '/docs/getting-started', prerender: false },
   },
 
   runtimeConfig: {
@@ -37,19 +49,9 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: {
-    enabled: true,
-  },
-
-  typescript: {
-    strict: false,
-  },
-
-  eslint: {
-    config: {
-      standalone: false,
-    },
-  },
+  typescript: { strict: false },
+  eslint: { config: { standalone: false } },
+  devtools: { enabled: true },
 
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-11',
