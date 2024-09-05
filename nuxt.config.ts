@@ -26,9 +26,8 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'simple-icons', 'solar'],
   },
 
-  routeRules: {
-    // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
-    '/': { prerender: true },
+  colorMode: {
+    preference: 'light',
   },
 
   runtimeConfig: {
@@ -37,19 +36,9 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: {
-    enabled: true,
-  },
-
-  typescript: {
-    strict: false,
-  },
-
-  eslint: {
-    config: {
-      standalone: false,
-    },
-  },
+  typescript: { strict: false },
+  eslint: { config: { standalone: false } },
+  devtools: { enabled: true },
 
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-11',

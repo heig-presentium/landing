@@ -13,13 +13,11 @@ useHead({
 </script>
 
 <template>
-  <AppHeader />
+  <NuxtLoadingIndicator />
 
-  <UMain>
+  <NuxtLayout>
     <NuxtPage />
-  </UMain>
-
-  <AppFooter />
+  </NuxtLayout>
 
   <UNotifications />
 </template>
