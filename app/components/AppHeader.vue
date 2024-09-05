@@ -12,13 +12,9 @@ const links = computed(() => [{
   to: '/#faq',
   icon: 'i-heroicons-question-mark-circle',
   active: nuxtApp.$router.currentRoute.value.path === '/' && activeHeadings.value.includes('faq'),
-}, {
-  label: 'Documentation',
-  to: '/docs',
-  icon: 'i-heroicons-book-open',
 }])
 
-nuxtApp.hooks.hookOnce('page:finish', () => {
+nuxtApp.hooks.hookOnce('page:loading:end', () => {
   if (nuxtApp.$router.currentRoute.value.path === '/') {
     updateHeadings([
       document.querySelector('#features'),
